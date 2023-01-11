@@ -1,21 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 * {
-  font-family: 'Inter';
-
+  font-family: 'Inter', sans-serif;
   }
 
 body {
-   background-image: url("images/background.png");
-   background-position: center;
-   background-size: cover;
-   background-repeat: no-repeat;
-   margin: 0;
+  background-image: url("images/background.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
 }
   
 .navigation {
-
-  background-color: #FFFFFF;
+  background-color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: stretch;
@@ -30,10 +28,10 @@ body {
 }
 
  .title-top {
-   font-size: 20px;
-   font-weight: 600;
-   color: #28351F;
-   margin: 10px 12px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #28351f;
+  margin: 10px 12px;
  } 
 
 .content {
@@ -42,7 +40,6 @@ body {
   text-align: center;
   align-content: center;
 }
-
  
 .title-body {
   display: flex;
@@ -51,7 +48,7 @@ body {
   margin-top: 64px;
   font-size: 40px;
   font-weight: 700;
-  color: #172B4D;
+  color: #172b4d;
   line-height: 52px;
   width: 327px;
   align-self: center;
@@ -59,19 +56,17 @@ body {
 }
 
 .title-body .highlited-title {
-  color: #36B37E;
+  color: #36b37e;
   width: 327px;
   align-self: center;
 }
 
-
 .about-me {
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
-  color: #172B4D;
+  color: #172b4d;
   width: 327px;
   align-self: center;
   margin-bottom: 58px;
@@ -95,5 +90,4 @@ body {
 .button-down img {
   height: 40px;
   width: 40px;
-
 }
