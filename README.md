@@ -4,7 +4,7 @@
   <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>Microverse README Template</b></h3>
+  <h3><b>README</b></h3>
 
 </div>
 
@@ -22,9 +22,9 @@
 - [📝 License](#license)
 
 
-# 📖 [Hello_Microverse] <a name="about-project"></a>
+# 📖 [Portfolio] <a name="about-project"></a>
 
-**Hello Microverse** is the first project that I have made in my learning path on Microverse.
+**Porfolio** is the first revision of my professional portfolio, as part of a activity of Microverse.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -33,11 +33,10 @@
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
 
-- It consists on a Html file and a CSS File
-- It has a h1 tag with the title **Hello Microverse!** 
-- It has a stylesheet in order to make the things fancier!
+- It consists on a Web page featuring a professional portfolio
+- All the design is extracted from a Figma template
+- In this first version, it has a Mobile-first approach 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -64,7 +63,7 @@ Clone this repository to your desired folder:
 
 ```
   cd my-folder
-  git clone git@github.com:jaimevillegas/Hello-Microverse.git
+  git clone git@github.com:jaimevillegas/Portfolio.git
 ```
 
 ### Install
@@ -94,9 +93,9 @@ Clone this repository to your desired folder:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] Add a js file 
-- [ ] Add more styles
-- [ ] Add more information
+- [ ] Add buttons to the navigation bar
+- [ ] Add a showcase of the projects that I have made 
+- [ ] Add more information about the technologies that I have learned
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
