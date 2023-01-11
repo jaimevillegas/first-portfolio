@@ -2,7 +2,7 @@
 
 * {
   font-family: 'Inter', sans-serif;
-  }
+}
 
 body {
   background-image: url("images/background.png");
@@ -11,7 +11,7 @@ body {
   background-repeat: no-repeat;
   margin: 0;
 }
-  
+ 
 .navigation {
   background-color: #fff;
   display: flex;
@@ -27,12 +27,12 @@ body {
   align-self: center;
 }
 
- .title-top {
+.title-top {
   font-size: 20px;
   font-weight: 600;
   color: #28351f;
   margin: 10px 12px;
- } 
+}
 
 .content {
   display: flex;
