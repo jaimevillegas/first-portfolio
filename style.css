@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+  font-family: 'Inter';
+
+  }
+
+body {
+   background-image: url("images/background.png");
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   margin: 0;
+}
+  
+.navigation {
+
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.nav-button {
+  display: flex;
+  margin-right: 32px;
+  height: 12px;
+  width: 18px;
+  align-self: center;
+}
+
+ .title-top {
+   font-size: 20px;
+   font-weight: 600;
+   color: #28351F;
+   margin: 10px 12px;
+ } 
+
+.content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-content: center;
+}
+
+ 
+.title-body {
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+  margin-top: 64px;
+  font-size: 40px;
+  font-weight: 700;
+  color: #172B4D;
+  line-height: 52px;
+  width: 327px;
+  align-self: center;
+  margin-bottom: 58px;
+}
+
+.title-body .highlited-title {
+  color: #36B37E;
+  width: 327px;
+  align-self: center;
+}
+
+
+.about-me {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #172B4D;
+  width: 327px;
+  align-self: center;
+  margin-bottom: 58px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  flex-grow: 0;
+}
+
+.social-icons img {
+  margin: 0 12px;
+}
+
+.button-down {
+  margin-top: 70px;
+}
+
+.button-down img {
+  height: 40px;
+  width: 40px;
+
+}
