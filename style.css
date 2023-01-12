@@ -59,7 +59,7 @@ a {
   margin-bottom: 0;
 }
 
-.title-body>h1 {
+.title-body > h1 {
   font-size: 40px;
   font-weight: 700;
   color: #172b4d;
@@ -95,7 +95,7 @@ a {
   align-content: center;
 }
 
-.social-icons>ul {
+.social-icons > ul {
   margin: 0;
   padding: 0;
   display: flex;
