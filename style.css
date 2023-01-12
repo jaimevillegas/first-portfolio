@@ -151,7 +151,7 @@ a {
   width: 48px;
   border-width: 3px;
   border-style: solid;
-  color: #36b37e; 
+  color: #36b37e;
   border-radius: 4px;
   margin-top: 24px;
   margin-bottom: 62px;
@@ -179,13 +179,23 @@ a {
 
 .project ul {
   display: flex;
-  margin:0;
+  margin: 0;
   padding: 0;
   justify-content: space-evenly;
 }
 
+.habilities li {
+  font-size: 12px;
+  color: #36b37e;
+  font-weight: 600;
+  background-color: #fff;
+  padding: 12px;
+  border-radius: 8px;
+  margin: 0 8px;
+  margin-bottom: 8px;
+}
+
 .project ul li {
-  margin: 0;
   background-color: #ebf0ee;
   padding: 8px 12px;
   margin: 2px 4px;
@@ -230,7 +240,7 @@ button {
 }
 
 button:hover {
-  box-shadow: 0px 8px 16px rgba(54, 179, 127, 0.24);
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
 
 button:active {
@@ -307,7 +317,7 @@ button:active {
   margin-top: 59px;
   padding: 0;
   display: grid;
-  grid-template-columns: 375px; 
+  grid-template-columns: 375px;
   grid-template-rows: repeat(3, 352px);
   row-gap: 24px;
 }
@@ -316,7 +326,6 @@ button:active {
   border: 1px solid #c1c7d0;
   border-radius: 8px;
   background-color: #ebf0ee;
-  margin: 0 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -339,7 +348,7 @@ button:active {
 }
 
 .habilities h2 {
-  padding:0;
+  padding: 0;
   margin: 0;
   font-size: 24px;
   font-weight: 600;
@@ -357,7 +366,7 @@ button:active {
 
 .habilities img {
   padding: 16px;
-  margin: 0px;
+  margin: 0;
   height: 48px;
   width: 48px;
   background-color: #fff;
@@ -366,20 +375,9 @@ button:active {
   margin-bottom: 64px;
 }
 
-.habilities li {
-  font-size: 12px;
-  color: #36b37e;
-  font-weight: 600;
-  background-color: #fff;
-  padding: 12px;
-  border-radius: 8px;
-  margin: 0 8px;
-  margin-bottom: 8px;
-}
-
 .about-me-container {
   background-image: url(images/img1-aboutme.png), url(images/img2-aboutme.jpg);
   background-repeat: no-repeat, no-repeat;
   background-size: 68px 127px, 70px 57px;
-  background-position: 307px 7px, 0px 380px;
+  background-position: 307px 7px, 0 380px;
 }
