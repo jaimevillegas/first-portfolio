@@ -1,8 +1,5 @@
 <a name="readme-top"></a>
 
-<div align="center">
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
 
   <h3><b>README</b></h3>
 
@@ -12,8 +9,16 @@
 
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -22,7 +27,7 @@
 - [📝 License](#license)
 
 
-# 📖 [Portfolio] <a name="about-project"></a>
+# 📖 Portfolio <a name="about-project"></a>
 
 **Porfolio** is the first revision of my professional portfolio, as part of a activity of Microverse.
 
@@ -43,7 +48,9 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](#)
+Currently I'm working hard in the Live Demo, to make shure you can enjoy the best experience possible.
+Thank you for your patience, I will let you know when will be available!
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -87,6 +94,9 @@ Clone this repository to your desired folder:
 👤 **Jaime Villegas**
 
 - GitHub: [@githubhandle](https://github.com/jaimevillegas)
+- Twitter: [@jaimevillegazz](https://twitter.com/JaimeVillegazz)
+- LinkedIn: [Villegas0296](https://www.linkedin.com/in/villegas0296/)
+- Medium: [@jaimevillegas296](https://medium.com/@jaimevillegas296)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -119,7 +129,6 @@ I would like to thank to Microverse on giving me the oportunity to develop my co
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 📝 License <a name="license"></a>
 

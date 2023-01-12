@@ -1,15 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 * {
   font-family: 'Inter', sans-serif;
 }
 
 body {
-  background-image: url("images/background.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 .navigation {
@@ -32,33 +37,45 @@ body {
   font-weight: 600;
   color: #28351f;
   margin: 10px 12px;
+  padding: 10px 12px;
+  line-height: 28px;
 }
 
 .content {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   text-align: center;
   align-content: center;
+  background-image: url("images/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .title-body {
   display: flex;
   flex-direction: column;
-  font-style: normal;
   margin-top: 64px;
+  margin-bottom: 0;
+}
+
+.title-body>h1 {
   font-size: 40px;
   font-weight: 700;
   color: #172b4d;
   line-height: 52px;
   width: 327px;
   align-self: center;
-  margin-bottom: 58px;
+  margin: 0;
 }
 
 .title-body .highlited-title {
   color: #36b37e;
+  margin: 0;
   width: 327px;
   align-self: center;
+  font-size: 40px;
+  margin-bottom: 20px;
 }
 
 .about-me {
@@ -74,16 +91,26 @@ body {
 
 .social-icons {
   display: flex;
-  justify-content: space-between;
-  align-self: center;
-  flex-grow: 0;
+  justify-content: center;
+  align-content: center;
+}
+
+.social-icons>ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 .social-icons img {
-  margin: 0 12px;
+  height: 20px;
+  margin: 0 10px;
+  padding: 0;
+  display: flex;
 }
 
 .button-down {
+  display: flex;
+  justify-content: center;
   margin-top: 70px;
 }
 
