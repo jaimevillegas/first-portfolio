@@ -78,7 +78,7 @@ a {
   margin-bottom: 20px;
 }
 
-.about-me {
+.about-me-brief {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -117,4 +117,267 @@ a {
 .button-down img {
   height: 40px;
   width: 40px;
+}
+
+.projects {
+  display: grid;
+  padding: 0;
+  grid-template-columns: 375px;
+  grid-template-rows: repeat(6, 474px);
+  row-gap: 24px;
+}
+
+.recent-works {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-recent-works {
+  display: flex;
+  justify-self: center;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  width: 300px;
+  font-size: 40px;
+  text-align: center;
+  color: #172b4d;
+  margin-top: 22px;
+}
+
+.hr-works {
+  width: 48px;
+  border-width: 3px;
+  border-style: solid;
+  color: #36b37e;
+  border-radius: 4px;
+  margin-top: 24px;
+  margin-bottom: 62px;
+}
+
+.project {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: 1px solid #d0d9d4;
+  border-radius: 8px;
+  margin-left: 26px;
+  margin-right: 22px;
+  background: #ebf0ee;
+}
+
+.project .img-container {
+  flex: 1 1 252px;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.project ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-evenly;
+}
+
+.habilities li {
+  font-size: 12px;
+  color: #36b37e;
+  font-weight: 600;
+  background-color: #fff;
+  padding: 12px;
+  border-radius: 8px;
+  margin: 0 8px;
+  margin-bottom: 8px;
+}
+
+.project ul li {
+  background-color: #ebf0ee;
+  padding: 8px 12px;
+  margin: 2px 4px;
+  border-radius: 4px;
+  align-self: center;
+  font-size: 12px;
+  color: #3a4a42;
+  font-weight: 600;
+}
+
+.project h2 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #3a4a42;
+  line-height: 32px;
+  margin-top: 16px;
+}
+
+.project .img-footer-container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-content: flex-end;
+  background: #fff;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+button {
+  background-color: #36b37e;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  border: none;
+  border-radius: 4px;
+  padding: 12px;
+}
+
+button:hover {
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+button:active {
+  background-color: #008552;
+}
+
+.project button {
+  width: 122px;
+  height: 48px;
+  align-self: center;
+  margin-top: 29px;
+  margin-bottom: 24px;
+}
+
+.project1 {
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+.project2 {
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+
+.project3 {
+  grid-row-start: 3;
+  grid-row-end: 3;
+}
+
+.project4 {
+  grid-row-start: 4;
+  grid-row-end: 4;
+}
+
+.project5 {
+  grid-row-start: 5;
+  grid-row-end: 5;
+}
+
+.project6 {
+  grid-row-start: 6;
+  grid-row-end: 6;
+}
+
+.about-me {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+}
+
+.about-me h1 {
+  font-size: 40px;
+  margin-top: 68px;
+  font-weight: 700;
+  color: #172b4d;
+  text-align: center;
+}
+
+.about-paragraph {
+  margin-top: 24px;
+  margin-left: 12px;
+  margin-right: 12px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: center;
+}
+
+.habilities {
+  margin: 0;
+  margin-top: 59px;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 375px;
+  grid-template-rows: repeat(3, 352px);
+  row-gap: 24px;
+}
+
+.habilities > div {
+  border: 1px solid #c1c7d0;
+  border-radius: 8px;
+  background-color: #ebf0ee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 24px;
+}
+
+.languages {
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+.frameworks {
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+
+.skills {
+  grid-row-start: 3;
+  grid-row-end: 3;
+}
+
+.habilities h2 {
+  padding: 0;
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #344563;
+}
+
+.habilities ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.habilities img {
+  padding: 16px;
+  margin: 0;
+  height: 48px;
+  width: 48px;
+  background-color: #fff;
+  border-radius: 40px;
+  margin-top: 40px;
+  margin-bottom: 64px;
+}
+
+.about-me-container {
+  background-image: url(images/img1-aboutme.png), url(images/img2-aboutme.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-size: 68px 127px, 70px 57px;
+  background-position: 307px 7px, 0 380px;
 }
