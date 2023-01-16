@@ -178,10 +178,11 @@ a {
 }
 
 .project ul {
-  display: flex;
+  border: 1px solid red;
+  /* display: flex; */
   margin: 0;
   padding: 0;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
 }
 
 .habilities li {
@@ -196,6 +197,8 @@ a {
 }
 
 .project ul li {
+  border: 1px solid blue;
+  float: left;
   background-color: #ebf0ee;
   padding: 8px 12px;
   margin: 2px 4px;
@@ -381,3 +384,5 @@ button:active {
   background-size: 68px 127px, 70px 57px;
   background-position: 307px 7px, 0 380px;
 }
+
+/* Changing flexbox to floats on projects technologies */
