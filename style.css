@@ -397,7 +397,7 @@ button:active {
   margin-right: 24px;
   display: flex;
   flex-direction: column;
-  align-content: space-between;
+  align-content: center;
   gap: 24px;
 }
 
@@ -418,13 +418,39 @@ button:active {
   height: 114px;
 }
 
-.contact-form button {
-  width: 129px;
-  height: 48px;
-  margin-left: auto;
-  margin-right: auto;
+textarea:focus,
+input:focus {
+  border: 1px solid #60c095;
+  color: #091e42;
 }
 
-.contact-form .social-icons {
+.contact-form button {
+  height: 48px;
+  width: 129px;
+  text-align: center;
+  align-self:center;
+}
+
+.social-icons-bottom {
   margin-top: 46px;
 }
+
+.email-bottom {
+
+  display: block;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+  color: #42526e;
+  text-align: center;
+  margin-top: 17px;
+}
+
+.contact-form {
+  border: 1px solid transparent;
+  background: url("images/illustration-contact-form.png");
+  background-repeat: no-repeat;
+  background-size: 57px 145px;
+  background-position: 315px 740px;
+}
+
