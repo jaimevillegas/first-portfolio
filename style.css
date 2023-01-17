@@ -417,3 +417,14 @@ button:active {
 .contact-form textarea {
   height: 114px;
 }
+
+.contact-form button {
+  width: 129px;
+  height: 48px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-form .social-icons {
+  margin-top: 46px;
+}
