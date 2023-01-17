@@ -428,7 +428,7 @@ input:focus {
   height: 48px;
   width: 129px;
   text-align: center;
-  align-self:center;
+  align-self: center;
 }
 
 .social-icons-bottom {
@@ -436,7 +436,6 @@ input:focus {
 }
 
 .email-bottom {
-
   display: block;
   text-decoration: none;
   font-size: 20px;
@@ -453,4 +452,3 @@ input:focus {
   background-size: 57px 145px;
   background-position: 315px 740px;
 }
-
