@@ -164,8 +164,6 @@ a {
   margin-bottom: 62px;
 }
 
-
-
 .project {
   display: flex;
   margin: 0;
@@ -226,8 +224,6 @@ a {
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
 }
-
-
 
 button {
   background-color: #36b37e;
@@ -333,7 +329,6 @@ button:active {
   margin: 0 8px;
   margin-bottom: 8px;
 }
-
 
 .habilities > div {
   border: 1px solid #c1c7d0;
@@ -546,7 +541,7 @@ input:focus {
 
   .hr-works {
     display: none;
-  } 
+  }
 
   .projects {
     padding: 0;
@@ -556,7 +551,7 @@ input:focus {
     margin-top: 52px;
     margin-right: 142px;
     margin-left: 142px;
-    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(2, 490px);
   }
 
@@ -667,7 +662,6 @@ input:focus {
   .contact-text-inputs {
     padding: 0;
     display: flex;
-    border: 1px solid red;
     margin-top: 164px;
     margin-left: 135px;
     margin-right: 135px;
@@ -676,17 +670,34 @@ input:focus {
   }
 
   .contact-text-inputs p {
-    border: 1px solid blue;
     margin: 0;
     flex-grow: 1;
     flex-basis: 470px;
-    /* max-width: 470px; */
+    line-height: 52px;
+    font-size: 30px;
+    font-weight: 700;
+    margin-right: 24px;
   }
 
   .contact-text-inputs form {
-    border: 1px solid green;
     margin: 0;
     flex-basis: 680px;
     flex-grow: 2;
+  }
+
+  .contact-text-inputs button {
+    justify-self: flex-start;
+    align-self: flex-start;
+  }
+
+  .email-bottom {
+    display: none;
+  }
+
+  .social-icons-bottom {
+    margin-top: 225px;
+    padding: 27px;
+    border-top: 1px solid #dfe1e6;;
+
   }
 }
