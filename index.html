@@ -11,7 +11,7 @@
 <body>
 
   <header>
-    <nav class='navigation'>
+    <nav class='navigation-mobile'>
       <a href="index.html" class="title-top">Welcome</a>
       <div class="nav-button">
         <img src="images/Union.png" />
@@ -21,6 +21,13 @@
 
 
   <section class="content">
+    <nav class="navigation-desktop">
+      <ul>
+        <li><a href="#" class="portfolio-link">Porfolio</a></li>
+        <li><a href="#" class="about-link">About</a></li>
+        <li><a href="#" class="contact-link">Contact</a></li>
+      </ul>
+    </nav>
     <section class="title-body">
       <h1>Hey there. I'm Jaime</h1>
       <h2 class='highlited-title'>I'm a software developer</h2>
@@ -62,11 +69,12 @@
     </section>
   </section>
 
+  <section class='recent-works'>
+    <h1 class="my-recent-works">My Recent Works</h1>
+    <hr class="hr-works">
+  </section>
+
   <section class="projects">
-    <section class='recent-works'>
-      <h1 class="my-recent-works">My Recent Works</h1>
-      <hr class="hr-works">
-    </section>
 
     <section class='project project1'>
       <div class='img-container'>
@@ -224,16 +232,19 @@
   <!--Start contact form -->
 
   <section class="contact-form">
-    <p>
-      I'm always interested in hearing about new projects,
-      so if you'd like to chat please get in touch.
-    </p>
-    <form action="https://formspree.io/f/mdovkzjl" method="POST">
-      <input type="text" id="name" name="user_name" placeholder="Full name" maxlength='30' required />
-      <input type="email" name="user_email" id="email" placeholder="Email address" required />
-      <textarea name="comment" id="comment" placeholder='Enter text here' maxlength='500' required></textarea>
-      <button type="submit">Get in Touch</button>
-    </form>
+    <div class="contact-text-inputs">
+      <p>
+        I'm always interested in hearing about new projects,
+        so if you'd like to chat please get in touch.
+      </p>
+      <form action="https://formspree.io/f/mdovkzjl" method="POST">
+        <input type="text" id="name" name="user_name" placeholder="Full name" maxlength='30' required />
+        <input type="email" name="user_email" id="email" placeholder="Email address" required />
+        <textarea name="comment" id="comment" placeholder='Enter text here' maxlength='500' required></textarea>
+        <button type="submit">Get in Touch</button>
+      </form>
+
+    </div>
 
     <section class='social-icons social-icons-bottom'>
       <ul>
