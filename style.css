@@ -517,6 +517,27 @@ input:focus {
     margin-bottom: 0;
   }
 
+  @keyframes slide1 {
+    0% {
+      color: #36b37e;
+      transform: scale(1);
+    }
+
+    50% {
+      color: #206b4c;
+      transform: scale(1.1);
+    }
+
+    100% {
+      color: #36b37e;
+      transform: scale(1);
+    }
+  }
+
+  .highlited-title:hover {
+    animation: slide1 0.5s ease-in-out;
+  }
+
   .about-me-brief {
     width: 768px;
     margin-bottom: 30px;
@@ -524,6 +545,17 @@ input:focus {
 
   .button-down {
     margin-bottom: 495px;
+  }
+
+  .button-down a {
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+  }
+
+  .button-down a:hover {
+    transform: scale(1.2);
   }
 
   .my-recent-works {
