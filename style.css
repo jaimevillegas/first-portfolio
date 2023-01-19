@@ -462,11 +462,6 @@ input:focus {
 }
 
 @media all and (min-width: 768px) {
-
-  body {
-    max-width: 1440px;
-  }
-
   .navigation-mobile {
     display: none;
   }
@@ -496,8 +491,7 @@ input:focus {
   }
 
   .content {
-    max-width: 1440px;
-    border: 1px solid blue;
+    /* max-width: 1440px; */
     background-image: url("images/Header-llustration-desktop.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -536,7 +530,8 @@ input:focus {
     padding: 0;
     margin: 0;
     min-width: 450px;
-    max-width: 1440px;
+
+    /* max-width: 1440px; */
     justify-content: center;
   }
 
@@ -610,7 +605,8 @@ input:focus {
 
   .about-me {
     margin-top: 192px;
-    max-width: 1440px;
+
+    /* max-width: 1440px; */
   }
 
   .about-me h1 {
@@ -622,7 +618,7 @@ input:focus {
   }
 
   .habilities {
-    max-width: 1440px;
+    /* max-width: 1440px; */
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 352px;
     margin-left: 143px;
@@ -672,6 +668,7 @@ input:focus {
 
   .contact-text-inputs p {
     margin: 0;
+    margin-top: -60px;
     flex-grow: 1;
     flex-basis: 470px;
     line-height: 52px;
@@ -699,5 +696,20 @@ input:focus {
     margin-top: 225px;
     padding: 27px;
     border-top: 1px solid #dfe1e6;
+  }
+
+  .about-me-container {
+    border: 1px solid transparent;
+    background-image: url("images/desktop-version/about-me-1.png"), url("images/desktop-version/about-me-2.png");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 245px 270px, 200px 120px;
+    background-position: 1195px 88px, 0 270px;
+  }
+
+  .contact-form {
+    background-image: url("images/desktop-version/footer-1.png"), url("images/desktop-version/footer-2.png"), url("images/desktop-version/footer-3.png");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 193px 352px, 130px 106px, 223px 495px;
+    background-position: 0 370px, 274px 529px, 1230px 225px;
   }
 }
