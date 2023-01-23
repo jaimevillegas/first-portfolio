@@ -125,6 +125,17 @@ a {
   width: 40px;
 }
 
+.habilities img {
+  padding: 16px;
+  margin: 0;
+  height: 48px;
+  width: 48px;
+  background-color: #fff;
+  border-radius: 40px;
+  margin-top: 40px;
+  margin-bottom: 64px;
+}
+
 .social-icons img:hover {
   transform: scale(1.3);
 }
@@ -376,17 +387,6 @@ button:active {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 24px;
-}
-
-.habilities img {
-  padding: 16px;
-  margin: 0;
-  height: 48px;
-  width: 48px;
-  background-color: #fff;
-  border-radius: 40px;
-  margin-top: 40px;
-  margin-bottom: 64px;
 }
 
 .about-me-container {
