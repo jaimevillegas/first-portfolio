@@ -114,10 +114,6 @@ a {
   transition: transform 0.5s linear;
 }
 
-.social-icons img:hover {
-  transform: scale(1.3);
-}
-
 .button-down {
   display: flex;
   justify-content: center;
@@ -127,6 +123,10 @@ a {
 .button-down img {
   height: 40px;
   width: 40px;
+}
+
+.social-icons img:hover {
+  transform: scale(1.3);
 }
 
 .projects {
