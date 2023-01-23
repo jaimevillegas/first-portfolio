@@ -48,9 +48,9 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-Currently I'm working hard in the Live Demo, to make shure you can enjoy the best experience possible.
-Thank you for your patience, I will let you know when will be available!
+You can see the Live Demo of the project following the link below:
 
+https://jaimevillegas.github.io/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
