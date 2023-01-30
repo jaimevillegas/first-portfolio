@@ -1,12 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
 * {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 body {
   margin: 0;
   padding: 0;
+  max-width 375px;
 }
 
 ul {
@@ -18,10 +19,12 @@ a {
 }
 
 .navigation-mobile {
+  max-width: 375px;
   background-color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: stretch;
+  border: 1px solid red;
 }
 
 .navigation-desktop {
@@ -716,14 +719,17 @@ input:focus {
 
   .about-me-container {
     border: 1px solid transparent;
-    background-image: url("images/desktop-version/about-me-1.png"), url("images/desktop-version/about-me-2.png");
+    background-image: url("images/desktop-version/about-me-1.png"),
+      url("images/desktop-version/about-me-2.png");
     background-repeat: no-repeat, no-repeat;
     background-size: 245px 270px, 200px 120px;
     background-position: 1195px 88px, 0 270px;
   }
 
   .contact-form {
-    background-image: url("images/desktop-version/footer-1.png"), url("images/desktop-version/footer-2.png"), url("images/desktop-version/footer-3.png");
+    background-image: url("images/desktop-version/footer-1.png"),
+      url("images/desktop-version/footer-2.png"),
+      url("images/desktop-version/footer-3.png");
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-size: 193px 352px, 130px 106px, 223px 495px;
     background-position: 0 370px, 274px 529px, 1230px 225px;
