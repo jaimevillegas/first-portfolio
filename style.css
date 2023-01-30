@@ -67,9 +67,20 @@ a {
   line-height: 60px;
 }
 
+.habilities li {
+  font-size: 12px;
+  color: #36b37e;
+  font-weight: 600;
+  background-color: #fff;
+  padding: 12px;
+  border-radius: 8px;
+  margin: 0 8px;
+  margin-bottom: 8px;
+}
+
 .nav-menu-content ul li {
   font-size: 32px;
-  font-family: Inter;
+  font-family: Inter, sans-serif;
   font-weight: 600;
 }
 
@@ -276,17 +287,6 @@ a {
   justify-content: space-evenly;
 }
 
-.habilities li {
-  font-size: 12px;
-  color: #36b37e;
-  font-weight: 600;
-  background-color: #fff;
-  padding: 12px;
-  border-radius: 8px;
-  margin: 0 8px;
-  margin-bottom: 8px;
-}
-
 .project ul li {
   background-color: #ebf0ee;
   padding: 8px 12px;
@@ -315,10 +315,7 @@ a {
   justify-content: flex-end;
   align-content: flex-end;
   background: #fff;
-  border-top-right-radius: 8px;
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
+  border-radius: 8px 6px;
 }
 
 button {
@@ -348,33 +345,27 @@ button:active {
 }
 
 .project1 {
-  grid-row-start: 1;
-  grid-row-end: 1;
+  grid-row: 1;
 }
 
 .project2 {
-  grid-row-start: 2;
-  grid-row-end: 2;
+  grid-row: 2;
 }
 
 .project3 {
-  grid-row-start: 3;
-  grid-row-end: 3;
+  grid-row: 3;
 }
 
 .project4 {
-  grid-row-start: 4;
-  grid-row-end: 4;
+  grid-row: 4;
 }
 
 .project5 {
-  grid-row-start: 5;
-  grid-row-end: 5;
+  grid-row: 5;
 }
 
 .project6 {
-  grid-row-start: 6;
-  grid-row-end: 6;
+  grid-row: 6;
 }
 
 .about-me {
@@ -426,18 +417,15 @@ button:active {
 }
 
 .languages {
-  grid-row-start: 1;
-  grid-row-end: 1;
+  grid-row: 1;
 }
 
 .frameworks {
-  grid-row-start: 2;
-  grid-row-end: 2;
+  grid-row: 2;
 }
 
 .skills {
-  grid-row-start: 3;
-  grid-row-end: 3;
+  grid-row: 3;
 }
 
 .habilities h2 {
@@ -458,7 +446,7 @@ button:active {
 }
 
 .about-me-container {
-  background-image: url(images/img1-aboutme.png), url(images/img2-aboutme.jpg);
+  background-image: url("images/img1-aboutme.png"), url("images/img2-aboutme.jpg");
   background-repeat: no-repeat, no-repeat;
   background-size: 68px 127px, 70px 57px;
   background-position: 307px 7px, 0 380px;
@@ -646,45 +634,33 @@ input:focus {
   }
 
   .project1 {
-    grid-row-start: 1;
-    grid-row-end: 1;
-    grid-column-start: 1;
-    grid-column-end: 1;
+    grid-row: 1;
+    grid-column: 1;
   }
 
   .project2 {
-    grid-row-start: 1;
-    grid-row-end: 1;
-    grid-column-start: 2;
-    grid-column-end: 2;
+    grid-row: 1;
+    grid-column: 2;
   }
 
   .project3 {
-    grid-row-start: 1;
-    grid-row-end: 1;
-    grid-column-start: 3;
-    grid-column-end: 3;
+    grid-row: 1;
+    grid-column: 3;
   }
 
   .project4 {
-    grid-row-start: 2;
-    grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: 1;
+    grid-row: 2;
+    grid-column: 1;
   }
 
   .project5 {
-    grid-row-start: 2;
-    grid-row-end: 2;
-    grid-column-start: 2;
-    grid-column-end: 2;
+    grid-row: 2;
+    grid-column: 2;
   }
 
   .project6 {
-    grid-row-start: 2;
-    grid-row-end: 2;
-    grid-column-start: 3;
-    grid-column-end: 3;
+    grid-row: 2;
+    grid-column: 3;
   }
 
   .about-me {
@@ -717,26 +693,20 @@ input:focus {
   }
 
   .languages {
-    grid-row-start: 1;
-    grid-row-end: 1;
-    grid-column-start: 1;
-    grid-column-end: 1;
+    grid-row: 1;
+    grid-column: 1;
     min-width: 369px;
   }
 
   .frameworks {
-    grid-row-start: 1;
-    grid-row-end: 1;
-    grid-column-start: 2;
-    grid-column-end: 2;
+    grid-row: 1;
+    grid-column: 2;
     min-width: 369px;
   }
 
   .skills {
-    grid-row-start: 1;
-    grid-row-end: 1;
-    grid-column-start: 3;
-    grid-column-end: 3;
+    grid-row: 1;
+    grid-column: 3;
     min-width: 369px;
   }
 
