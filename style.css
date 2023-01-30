@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
 * {
-  font-family: "Inter", sans-serif;
+  font-family: Inter, sans-serif;
 }
 
 body {
@@ -24,6 +24,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
+
   /* border: 1px solid red; */
 }
 
@@ -31,6 +32,7 @@ a {
   background: none;
   margin: 0;
   padding: 0;
+
   /* boder: 1px solid red; */
 }
 
@@ -41,25 +43,46 @@ a {
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.4);
+
+  /* height: 100vh; */
+
+  /* overflow: auto; */
+  background-color: rgb(0 0 0);
+  background-color: rgb(0 0 0 / 40%);
 }
 
 .nav-menu-content {
   background-color: #fefefe;
-  margin: 15% auto;
-  padding: 20px;
+
+  /* margin: 15% auto; */
+  padding: 0;
+  margin: 0;
   border: 1px solid #888;
-  width: 80%;
+  width: 100%;
+  height: 100vh;
+}
+
+.nav-menu-content ul {
+  padding: 108px 28px;
+  line-height: 60px;
+}
+
+.nav-menu-content ul li {
+  font-size: 32px;
+  font-family: Inter;
+  font-weight: 600;
+}
+
+.nav-menu-content ul li a {
+  color: #3a4a42;
 }
 
 .close {
   color: #aaa;
   float: right;
-  font-size: 28px;
-  font-weight: bold;
+  font-size: 32px;
+  font-weight: 500;
+  transform: translateX(-30px) translateY(40px);
 }
 
 .close:hover,
@@ -309,7 +332,7 @@ button {
 }
 
 button:hover {
-  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  box-shadow: 0 8px 16px rgb(54 179 127 / 24%);
 }
 
 button:active {
@@ -448,7 +471,7 @@ button:active {
   line-height: 52px;
   text-align: center;
   padding: 0;
-  margin: 60px 24px 58px 24px;
+  margin: 60px 24px 58px;
 }
 
 .contact-form form {
@@ -761,7 +784,8 @@ input:focus {
 
   .about-me-container {
     border: 1px solid transparent;
-    background-image: url("images/desktop-version/about-me-1.png"),
+    background-image:
+      url("images/desktop-version/about-me-1.png"),
       url("images/desktop-version/about-me-2.png");
     background-repeat: no-repeat, no-repeat;
     background-size: 245px 270px, 200px 120px;
@@ -769,7 +793,8 @@ input:focus {
   }
 
   .contact-form {
-    background-image: url("images/desktop-version/footer-1.png"),
+    background-image:
+      url("images/desktop-version/footer-1.png"),
       url("images/desktop-version/footer-2.png"),
       url("images/desktop-version/footer-3.png");
     background-repeat: no-repeat, no-repeat, no-repeat;
