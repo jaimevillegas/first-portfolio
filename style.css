@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
+:root {
+  --green-color: #36b37f;
+  --darkBlue-color: #172b4d;
+}
+
 * {
   font-family: Inter, sans-serif;
 }
@@ -7,8 +12,6 @@
 body {
   margin: 0;
   padding: 0;
-  max-width: 375px;
-  overflow: hidden;
 }
 
 ul {
@@ -60,7 +63,7 @@ a {
 
 .habilities li {
   font-size: 12px;
-  color: #36b37e;
+  color: var(--darkBlue-color);
   font-weight: 600;
   background-color: #fff;
   padding: 12px;
@@ -136,7 +139,7 @@ a {
 .title-body > h1 {
   font-size: 40px;
   font-weight: 700;
-  color: #172b4d;
+  color: var(--darkBlue-color);
   line-height: 52px;
   width: 327px;
   align-self: center;
@@ -144,7 +147,7 @@ a {
 }
 
 .title-body .highlited-title {
-  color: #36b37e;
+  color: var(--green-color);
   margin: 0;
   width: 327px;
   align-self: center;
@@ -157,7 +160,7 @@ a {
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
-  color: #172b4d;
+  color: var(--darkBlue-color);
   width: 327px;
   align-self: center;
   margin-bottom: 58px;
@@ -207,7 +210,7 @@ a {
 }
 
 .social-icons img:hover {
-  transform: scale(1.3);
+  transform: scale(1.2);
 }
 
 .projects {
@@ -217,7 +220,7 @@ a {
   align-items: center;
   grid-template-columns: 100%;
   grid-template-rows: repeat(6, 474px);
-  min-width: 370px;
+  /* min-width: 370px; */
   row-gap: 24px;
 }
 
@@ -237,7 +240,7 @@ a {
   width: 300px;
   font-size: 40px;
   text-align: center;
-  color: #172b4d;
+  color: var(--darkBlue-color);
   margin-top: 22px;
 }
 
@@ -245,7 +248,7 @@ a {
   width: 48px;
   border-width: 3px;
   border-style: solid;
-  color: #36b37e;
+  color: var(--green-color);
   border-radius: 4px;
   margin-top: 24px;
   margin-bottom: 62px;
@@ -310,7 +313,7 @@ a {
 }
 
 button {
-  background-color: #36b37e;
+  background-color: var(--green-color);
   color: #fff;
   font-size: 17px;
   font-weight: 500;
@@ -372,7 +375,7 @@ button:active {
   font-size: 40px;
   margin-top: 68px;
   font-weight: 700;
-  color: #172b4d;
+  color: var(--darkBlue-color);
   text-align: center;
 }
 
@@ -392,7 +395,7 @@ button:active {
   padding: 0;
   display: grid;
   grid-template-columns: 100%;
-  min-width: 375px;
+  /* min-width: 375px; */
   grid-template-rows: repeat(3, 352px);
   row-gap: 24px;
 }
@@ -446,7 +449,7 @@ button:active {
 .contact-form p {
   font-weight: 700;
   font-size: 40px;
-  color: #172b4d;
+  color: var(--darkBlue-color);
   line-height: 52px;
   text-align: center;
   padding: 0;
@@ -482,7 +485,7 @@ button:active {
 textarea:focus,
 input:focus {
   border: 1px solid #60c095;
-  color: #091e42;
+  color: var(--darkBlue-color);
 }
 
 .contact-form button {
@@ -504,6 +507,7 @@ input:focus {
   color: #42526e;
   text-align: center;
   margin-top: 17px;
+  margin-bottom: 40px;
 }
 
 .contact-form {
@@ -528,29 +532,24 @@ input:focus {
     flex-direction: row;
     justify-content: center;
   }
-
+  
   .navigation-desktop ul {
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
   }
-
+  
   .navigation-desktop li {
     padding: 10px 12px;
     font-size: 15px;
     font-weight: 600;
-    color: #344563;
-
-    /* Add transition */
-    transform: scale(1);
-    transition-property: transform;
-    transition-duration: 0.5s;
-    transition-timing-function: linear;
+    color: var(--darkBlue-color);
   }
 
-  .navigation-desktop li:hover {
-    transform: scale(1.3);
+  .navigation-desktop a {
+    text-decoration: none;
+    color: var(--darkBlue-color);
   }
 
   .content {
@@ -567,7 +566,7 @@ input:focus {
   .title-body > h1 {
     font-size: 40px;
     font-weight: 700;
-    color: #172b4d;
+    color: var(--darkBlue-color);
     line-height: 52px;
     width: 920px;
     align-self: center;
