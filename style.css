@@ -5,6 +5,20 @@
   --darkBlue-color: #172b4d;
 }
 
+::-webkit-scrollbar {
+  width: 12px;
+}
+                  
+::-webkit-scrollbar-track {
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+                  
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: silver;
+}
+
 * {
   font-family: Inter, sans-serif;
 }
@@ -519,24 +533,35 @@ input:focus {
 }
 
 .popup-window-back {
-  display: none;
+  /* display: none; */
 }
 
 @media all and (min-width: 768px) {
 
   /* Popup Window */
+
+
   .popup-window-back {
-    display: none;
-    /* position: fixed; */
-    backdrop-filter: blur(30px);
+    /* display: none; */
+    position: fixed;
+    top: 0;
+    backdrop-filter: blur(10px);
+    background-color: #c1c7d07c;
     height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
   }
   
   .popup-window-front {
     background-color: #fff;
-    margin: 0 auto;
-    width: 920px;
-    z-index: 2;
+    width: 70%;
+    height: 80%;
+    padding: 24px;
+    border-radius: 8px;
+    overflow-y: auto;
   }
 
   .close-popup {
@@ -546,22 +571,22 @@ input:focus {
     box-sizing: border-box;
     border-radius: 8px;
     /* padding: 8px; */
-    margin: 24px;
+    /* margin: 24px; */
+    margin-bottom: 14px;
     font-size: 22px;
     color: #67798e;
     float: right;
   }
 
   .popup-window-front img {
-    height: 616px;
-    width: 872px;
+    width: 100%;
   }
 
   .header-popup-window {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin: 24px 26px;
+    margin-top: 24px;
   }
 
   .header-popup-window h1 {
@@ -576,18 +601,33 @@ input:focus {
     width: 589px;
   }
 
-  .header-popup-window button {
-    height: 48px;
-    min-width: 115px;
-    text-align: left;
+  .button-container-popup {
+    display: flex;
+    column-gap: 12px;
+
   }
 
+  .header-popup-window button {
+    height: 48px;
+    /* min-width: 115px; */
+    width: max-content;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 8px;
+    border-radius: 8px;
+  }
+
+
+  .header-popup-window button>img {
+    width: 20px;
+  }
   .button-see-source {
     width: 141px;
   } 
 
   .tags-technologies ul {
-    margin-left: 26px;
     padding: 0;
     display: flex;
     column-gap: 8px;
@@ -603,6 +643,14 @@ input:focus {
     font-size: 12px;
   }
 
+  .text-popup-window {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #344563;
+    text-align: left;
+  }
 
 
 
