@@ -1,13 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
 * {
-  font-family: "Inter", sans-serif;
+  font-family: Inter, sans-serif;
 }
 
 body {
   margin: 0;
   padding: 0;
-  max-width 375px;
+  max-width: 375px;
+  overflow: hidden;
 }
 
 ul {
@@ -24,7 +25,73 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  border: 1px solid red;
+}
+
+#menu-toggle {
+  background: none;
+  margin: 0;
+  padding: 0;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: rgb(0 0 0);
+  background-color: rgb(0 0 0 / 40%);
+}
+
+.nav-menu-content {
+  background-color: #fefefe;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #888;
+  width: 100%;
+  height: 100vh;
+}
+
+.nav-menu-content ul {
+  padding: 108px 28px;
+  line-height: 60px;
+}
+
+.habilities li {
+  font-size: 12px;
+  color: #36b37e;
+  font-weight: 600;
+  background-color: #fff;
+  padding: 12px;
+  border-radius: 8px;
+  margin: 0 8px;
+  margin-bottom: 8px;
+}
+
+.nav-menu-content ul li {
+  font-size: 32px;
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+}
+
+.nav-menu-content ul li a {
+  color: #3a4a42;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 32px;
+  font-weight: 500;
+  transform: translateX(-30px) translateY(40px);
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .navigation-desktop {
@@ -211,17 +278,6 @@ a {
   justify-content: space-evenly;
 }
 
-.habilities li {
-  font-size: 12px;
-  color: #36b37e;
-  font-weight: 600;
-  background-color: #fff;
-  padding: 12px;
-  border-radius: 8px;
-  margin: 0 8px;
-  margin-bottom: 8px;
-}
-
 .project ul li {
   background-color: #ebf0ee;
   padding: 8px 12px;
@@ -250,10 +306,7 @@ a {
   justify-content: flex-end;
   align-content: flex-end;
   background: #fff;
-  border-top-right-radius: 8px;
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
+  border-radius: 8px 6px;
 }
 
 button {
@@ -267,7 +320,7 @@ button {
 }
 
 button:hover {
-  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  box-shadow: 0 8px 16px rgb(54 179 127 / 24%);
 }
 
 button:active {
@@ -283,33 +336,27 @@ button:active {
 }
 
 .project1 {
-  grid-row-start: 1;
-  grid-row-end: 1;
+  grid-row: 1;
 }
 
 .project2 {
-  grid-row-start: 2;
-  grid-row-end: 2;
+  grid-row: 2;
 }
 
 .project3 {
-  grid-row-start: 3;
-  grid-row-end: 3;
+  grid-row: 3;
 }
 
 .project4 {
-  grid-row-start: 4;
-  grid-row-end: 4;
+  grid-row: 4;
 }
 
 .project5 {
-  grid-row-start: 5;
-  grid-row-end: 5;
+  grid-row: 5;
 }
 
 .project6 {
-  grid-row-start: 6;
-  grid-row-end: 6;
+  grid-row: 6;
 }
 
 .about-me {
@@ -361,18 +408,15 @@ button:active {
 }
 
 .languages {
-  grid-row-start: 1;
-  grid-row-end: 1;
+  grid-row: 1;
 }
 
 .frameworks {
-  grid-row-start: 2;
-  grid-row-end: 2;
+  grid-row: 2;
 }
 
 .skills {
-  grid-row-start: 3;
-  grid-row-end: 3;
+  grid-row: 3;
 }
 
 .habilities h2 {
@@ -393,7 +437,7 @@ button:active {
 }
 
 .about-me-container {
-  background-image: url(images/img1-aboutme.png), url(images/img2-aboutme.jpg);
+  background-image: url("images/img1-aboutme.png"), url("images/img2-aboutme.jpg");
   background-repeat: no-repeat, no-repeat;
   background-size: 68px 127px, 70px 57px;
   background-position: 307px 7px, 0 380px;
@@ -406,7 +450,7 @@ button:active {
   line-height: 52px;
   text-align: center;
   padding: 0;
-  margin: 60px 24px 58px 24px;
+  margin: 60px 24px 58px;
 }
 
 .contact-form form {
@@ -510,7 +554,6 @@ input:focus {
   }
 
   .content {
-    /* max-width: 1440px; */
     background-image: url("images/Header-llustration-desktop.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -549,8 +592,6 @@ input:focus {
     padding: 0;
     margin: 0;
     min-width: 450px;
-
-    /* max-width: 1440px; */
     justify-content: center;
   }
 
@@ -581,51 +622,37 @@ input:focus {
   }
 
   .project1 {
-    grid-row-start: 1;
-    grid-row-end: 1;
-    grid-column-start: 1;
-    grid-column-end: 1;
+    grid-row: 1;
+    grid-column: 1;
   }
 
   .project2 {
-    grid-row-start: 1;
-    grid-row-end: 1;
-    grid-column-start: 2;
-    grid-column-end: 2;
+    grid-row: 1;
+    grid-column: 2;
   }
 
   .project3 {
-    grid-row-start: 1;
-    grid-row-end: 1;
-    grid-column-start: 3;
-    grid-column-end: 3;
+    grid-row: 1;
+    grid-column: 3;
   }
 
   .project4 {
-    grid-row-start: 2;
-    grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: 1;
+    grid-row: 2;
+    grid-column: 1;
   }
 
   .project5 {
-    grid-row-start: 2;
-    grid-row-end: 2;
-    grid-column-start: 2;
-    grid-column-end: 2;
+    grid-row: 2;
+    grid-column: 2;
   }
 
   .project6 {
-    grid-row-start: 2;
-    grid-row-end: 2;
-    grid-column-start: 3;
-    grid-column-end: 3;
+    grid-row: 2;
+    grid-column: 3;
   }
 
   .about-me {
     margin-top: 192px;
-
-    /* max-width: 1440px; */
   }
 
   .about-me h1 {
@@ -637,7 +664,6 @@ input:focus {
   }
 
   .habilities {
-    /* max-width: 1440px; */
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 352px;
     margin-left: 143px;
@@ -652,26 +678,20 @@ input:focus {
   }
 
   .languages {
-    grid-row-start: 1;
-    grid-row-end: 1;
-    grid-column-start: 1;
-    grid-column-end: 1;
+    grid-row: 1;
+    grid-column: 1;
     min-width: 369px;
   }
 
   .frameworks {
-    grid-row-start: 1;
-    grid-row-end: 1;
-    grid-column-start: 2;
-    grid-column-end: 2;
+    grid-row: 1;
+    grid-column: 2;
     min-width: 369px;
   }
 
   .skills {
-    grid-row-start: 1;
-    grid-row-end: 1;
-    grid-column-start: 3;
-    grid-column-end: 3;
+    grid-row: 1;
+    grid-column: 3;
     min-width: 369px;
   }
 
@@ -719,7 +739,8 @@ input:focus {
 
   .about-me-container {
     border: 1px solid transparent;
-    background-image: url("images/desktop-version/about-me-1.png"),
+    background-image:
+      url("images/desktop-version/about-me-1.png"),
       url("images/desktop-version/about-me-2.png");
     background-repeat: no-repeat, no-repeat;
     background-size: 245px 270px, 200px 120px;
@@ -727,7 +748,8 @@ input:focus {
   }
 
   .contact-form {
-    background-image: url("images/desktop-version/footer-1.png"),
+    background-image:
+      url("images/desktop-version/footer-1.png"),
       url("images/desktop-version/footer-2.png"),
       url("images/desktop-version/footer-3.png");
     background-repeat: no-repeat, no-repeat, no-repeat;
