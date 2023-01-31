@@ -519,6 +519,40 @@ input:focus {
 }
 
 @media all and (min-width: 768px) {
+
+  /* Popup Window */
+  .popup-window-back {
+    /* position: fixed; */
+    backdrop-filter: blur(30px);
+  }
+  
+  .popup-window-front {
+    background-color: #fff;
+    margin: 0 auto;
+    width: 920px;
+    height: 1083px;
+    z-index: 2;
+  }
+
+  .close-popup {
+    background-color: #ebecf0;
+    height: 30px;
+    width: 30px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    /* padding: 8px; */
+    margin: 24px;
+    font-size: 22px;
+    color: #67798e;
+    float: right;
+  }
+
+  .popup-window-front img {
+    height: 616px;
+    width: 872px;
+  }
+
+  /* ----------- */
   .navigation-mobile {
     display: none;
   }
