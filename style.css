@@ -2,7 +2,7 @@
 
 :root {
   --green-color: #36b37f;
-  --darkBlue-color: #172b4d;
+  --dark-blue-color: #172b4d;
 }
 
 ::-webkit-scrollbar {
@@ -77,13 +77,23 @@ a {
 
 .habilities li {
   font-size: 12px;
-  color: var(--darkBlue-color);
+  color: var(--dark-blue-color);
   font-weight: 600;
   background-color: #fff;
   padding: 12px;
   border-radius: 8px;
   margin: 0 8px;
   margin-bottom: 8px;
+}
+
+.tags-technologies li {
+  margin: 0;
+  background-color: #ebecf0;
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: #344563;
+  font-weight: 600;
+  font-size: 12px;
 }
 
 .nav-menu-content ul li {
@@ -153,7 +163,7 @@ a {
 .title-body > h1 {
   font-size: 40px;
   font-weight: 700;
-  color: var(--darkBlue-color);
+  color: var(--dark-blue-color);
   line-height: 52px;
   width: 327px;
   align-self: center;
@@ -174,7 +184,7 @@ a {
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
-  color: var(--darkBlue-color);
+  color: var(--dark-blue-color);
   width: 327px;
   align-self: center;
   margin-bottom: 58px;
@@ -223,6 +233,15 @@ a {
   margin-bottom: 64px;
 }
 
+.popup-window-front img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.button-container-popup-mobile button > img {
+  width: 20px;
+}
+
 .social-icons img:hover {
   transform: scale(1.2);
 }
@@ -255,7 +274,7 @@ a {
   width: 300px;
   font-size: 40px;
   text-align: center;
-  color: var(--darkBlue-color);
+  color: var(--dark-blue-color);
   margin-top: 22px;
 }
 
@@ -395,7 +414,7 @@ button:active {
   font-size: 40px;
   margin-top: 68px;
   font-weight: 700;
-  color: var(--darkBlue-color);
+  color: var(--dark-blue-color);
   text-align: center;
 }
 
@@ -470,7 +489,7 @@ button:active {
 .contact-form p {
   font-weight: 700;
   font-size: 40px;
-  color: var(--darkBlue-color);
+  color: var(--dark-blue-color);
   line-height: 52px;
   text-align: center;
   padding: 0;
@@ -506,7 +525,7 @@ button:active {
 textarea:focus,
 input:focus {
   border: 1px solid #60c095;
-  color: var(--darkBlue-color);
+  color: var(--dark-blue-color);
 }
 
 .contact-form button {
@@ -579,11 +598,6 @@ input:focus {
   color: #111;
 }
 
-.popup-window-front img {
-  width: 100%;
-  border-radius: 8px;
-}
-
 .header-popup-window {
   /* display: flex;
     justify-content: space-between;
@@ -597,7 +611,7 @@ input:focus {
   text-align: left;
   font-family: Inter, sans-serif;
   font-size: 32px;
-  color: var(--darkBlue-color);
+  color: var(--dark-blue-color);
   font-weight: 700;
   line-height: 44px;
 
@@ -627,10 +641,6 @@ input:focus {
   border-radius: 8px;
 }
 
-.button-container-popup-mobile button > img {
-  width: 20px;
-}
-
 .button-see-source {
   width: 141px;
 }
@@ -641,16 +651,6 @@ input:focus {
   column-gap: 8px;
 }
 
-.tags-technologies li {
-  margin: 0;
-  background-color: #ebecf0;
-  padding: 8px 12px;
-  border-radius: 8px;
-  color: #344563;
-  font-weight: 600;
-  font-size: 12px;
-}
-
 .text-popup-window {
   font-style: normal;
   font-weight: 400;
@@ -659,7 +659,6 @@ input:focus {
   color: #344563;
   text-align: left;
 }
-
 
 /* ----------- */
 @media all and (min-width: 768px) {
@@ -724,7 +723,7 @@ input:focus {
     text-align: left;
     font-family: Inter, sans-serif;
     font-size: 32px;
-    color: var(--darkBlue-color);
+    color: var(--dark-blue-color);
     font-weight: 700;
     line-height: 44px;
     width: 589px;
@@ -818,12 +817,12 @@ input:focus {
     padding: 10px 12px;
     font-size: 15px;
     font-weight: 600;
-    color: var(--darkBlue-color);
+    color: var(--dark-blue-color);
   }
 
   .navigation-desktop a {
     text-decoration: none;
-    color: var(--darkBlue-color);
+    color: var(--dark-blue-color);
   }
 
   .content {
@@ -840,7 +839,7 @@ input:focus {
   .title-body > h1 {
     font-size: 40px;
     font-weight: 700;
-    color: var(--darkBlue-color);
+    color: var(--dark-blue-color);
     line-height: 52px;
     width: 920px;
     align-self: center;

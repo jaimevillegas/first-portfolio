@@ -133,7 +133,3 @@ close.addEventListener('click', (() => { mobileMenuDisplayNone(); }));
 open.addEventListener('click', (() => { mobileMenuDisplayBlock(); }));
 closePopup.addEventListener('click', (() => { popupDisplayNone(); }));
 popupArticle.addEventListener('click', (() => { popupDisplayNone(); }));
-
-
-
-
