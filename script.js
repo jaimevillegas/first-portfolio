@@ -24,7 +24,7 @@ const formData = {
   name: '',
   email: '',
   textarea: '',
-}
+};
 
 const works = [
   {
@@ -89,7 +89,7 @@ function validateEmail(input) {
   }
 }
 
-form.addEventListener('keyup', (()=> {
+form.addEventListener('keyup', (() => {
   formData.name = Name.value;
   formData.email = email.value;
   formData.textarea = textarea.value;
@@ -164,7 +164,6 @@ window.addEventListener('load', (() => {
   Name.value = localData.name;
   email.value = localData.email;
   textarea.value = localData.textarea;
-
 }));
 popupContainer.addEventListener('click', ((e) => {
   e.stopPropagation();
