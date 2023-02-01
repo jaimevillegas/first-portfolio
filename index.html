@@ -12,23 +12,57 @@
       <nav class="navigation-mobile">
         <a href="index.html" class="title-top">Welcome</a>
         <div class="nav-button">
-          <button id="menu-toggle">
+          <button id="open">
             <img src="images/Union.png" />
           </button>
         </div>
       </nav>
     </header>
 
+    <!-- Modal Menu -->
     <div id="nav-menu" class="modal">
       <div class="nav-menu-content">
-        <span class="close">&times;</span>
+        <span class="close" id='close'>&times;</span>
         <ul>
-          <li id="item1"><a href="#portfolio" class="portfolio-link">Porfolio</a></li>
-          <li id="item2"><a href="#about" class="about-link">About</a></li>
-          <li id="item3"><a href="#contact" class="contact-link">Contact</a></li>
+          <li id="menuItem1"><a href="#portfolio" class="portfolio-link">Porfolio</a></li>
+          <li id="menuItem2"><a href="#about" class="about-link">About</a></li>
+          <li id="menuItem3"><a href="#contact" class="contact-link">Contact</a></li>
         </ul>
       </div>
     </div>
+    <!-- ----- -->
+
+
+    <!-- <section class="worksContainer"> -->
+      <div class="popup-window-back" id="popupArticle">
+        <div class="popup-window-front" id="popupContainer">
+          <span class="close-popup" id="closePopup">&times;</span>
+          <img src="images/project-5.png" alt="" id="image">
+          <div class="header-popup-window">
+            <h1 id="title">Keeping track of hundreds of components</h1>
+            <div class="button-container-popup">
+              <button>See live <img src="images/icon-live.png" alt=""></button>
+              <button class="button-see-source">See source <img src="images/github-white.png" alt=""></button>
+            </div>
+          </div>
+          <div class="tags-technologies" id='techs'>
+            <ul class="ul-tags-technologies">
+              <li>Ruby on rails</li>
+              <li>CSS</li>
+              <li>Javascript</li>
+            </ul>
+          </div>
+          <p class="text-popup-window">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea
+          </p>
+            <div class="button-container-popup-mobile">
+              <button id="liveVersion">See live <img src="images/icon-live.png" alt=""></button>
+              <button class="button-see-source-mobile" id="source">See source <img src="images/github-white.png" alt=""></button>
+        </div>
+        </div>
+      </div>
+    <!-- </section> -->
+
 
     <section id="portfolio" class="content">
       <nav class="navigation-desktop">
@@ -38,36 +72,6 @@
           <li><a href="#contact" class="contact-link">Contact</a></li>
         </ul>
       </nav>
-
-      <!-- Details Popup Window -->
-      <section class="popup-window-back">
-        <div class="popup-window-front">
-        <span class="close-popup">&times;</span>
-        <img src="images/snapshoot_portfolio.png" alt="">
-        <div class="header-popup-window">
-          <h1>Keeping track of hundreds of components</h1>
-          <div class="button-container-popup">
-            <button>See live <img src="images/icon-live.png" alt=""></button>
-            <button class="button-see-source">See source <img src="images/github-white.png" alt=""></button>
-          </div>
-        </div>
-        <div class="tags-technologies">
-          <ul>
-            <li>Codekit</li>
-            <li>GitHub</li>
-            <li>Javascript</li>
-            <li>Bootstrap</li>
-            <li>Terminal</li>
-            <li>Codepen</li>
-          </ul>
-        </div>
-        <p class="text-popup-window">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea
-          </p>
-
-        </div>
-      </section>
-
 
 
       <section class="title-body">
@@ -123,10 +127,15 @@
       <hr class="hr-works" />
     </section>
 
-    <section class="projects">
-      <section class="project project1">
+    <section class="projects" id="projects">
+
+
+      <!-- Details Popup Window -->
+
+<!-- 
+      <section class="project">
         <div class="img-container">
-          <img src="#" alt="" />
+          <img src="images/snapshoot_portfolio.png" alt="" />
         </div>
         <div class="img-footer-container">
           <h2>Multi-post Stories Gain+Glory</h2>
@@ -140,9 +149,9 @@
         </div>
       </section>
 
-      <section class="project project2">
+      <section class="project">
         <div class="img-container">
-          <img src="#" alt="" />
+          <img src="images/project-2.png" alt="" />
         </div>
         <div class="img-footer-container">
           <h2>Multi-post Stories Gain+Glory</h2>
@@ -154,11 +163,11 @@
           </ul>
           <button>See Project</button>
         </div>
-      </section>
-
-      <section class="project project3">
+      </section> -->
+<!-- 
+      <section class="project">
         <div class="img-container">
-          <img src="#" alt="" />
+          <img src="images/project-3.png" alt="" />
         </div>
         <div class="img-footer-container">
           <h2>Multi-post Stories Gain+Glory</h2>
@@ -174,7 +183,7 @@
 
       <section class="project project4">
         <div class="img-container">
-          <img src="#" alt="" />
+          <img src="images/project-4.png" alt="" />
         </div>
         <div class="img-footer-container">
           <h2>Multi-post Stories Gain+Glory</h2>
@@ -190,7 +199,7 @@
 
       <section class="project project5">
         <div class="img-container">
-          <img src="#" alt="" />
+          <img src="images/project-3.png" alt="" />
         </div>
         <div class="img-footer-container">
           <h2>Multi-post Stories Gain+Glory</h2>
@@ -206,7 +215,7 @@
 
       <section class="project project6">
         <div class="img-container">
-          <img src="#" alt="" />
+          <img src="images/project-2.png" alt="" />
         </div>
         <div class="img-footer-container">
           <h2>Multi-post Stories Gain+Glory</h2>
@@ -218,7 +227,7 @@
           </ul>
           <button>See Project</button>
         </div>
-      </section>
+      </section> -->
     </section>
 
     <section id="about" class="about-me-container">
