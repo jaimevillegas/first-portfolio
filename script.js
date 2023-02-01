@@ -16,6 +16,15 @@ const source = document.getElementById('source');
 const worksContainer = document.getElementById('projects');
 const error = document.getElementById('error');
 const form = document.forms[0];
+const Name = document.getElementById('name');
+const email = document.getElementById('email');
+const textarea = document.getElementById('comment');
+
+const formData = {
+  name: '',
+  email: '',
+  textarea: '',
+}
 
 const works = [
   {
@@ -80,6 +89,13 @@ function validateEmail(input) {
   }
 }
 
+form.addEventListener('keyup', (()=> {
+  formData.name = Name.value;
+  formData.email = email.value;
+  formData.textarea = textarea.value;
+  localStorage.formData = JSON.stringify(formData);
+}));
+
 form.addEventListener('submit', (event) => {
   event.preventDefault();
 
@@ -143,6 +159,12 @@ window.addEventListener('load', (() => {
   works.forEach((work, index) => {
     createWorkCard(work.title, work.image, work.techs, index);
   });
+
+  const localData = JSON.parse(localStorage.formData);
+  Name.value = localData.name;
+  email.value = localData.email;
+  textarea.value = localData.textarea;
+
 }));
 popupContainer.addEventListener('click', ((e) => {
   e.stopPropagation();
