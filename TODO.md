@@ -1,0 +1,1 @@
+- I need to show the Popup Window when I click on See Project button, not clicking anywhere on the project card.
