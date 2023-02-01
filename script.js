@@ -16,6 +16,16 @@ const liveVersion = document.getElementById('liveVersion');
 const source = document.getElementById('source');
 const worksContainer = document.getElementById('projects');
 
+// FORM
+const form = document.forms[0];
+
+// Messages
+const NAME_REQUIRED = "Please enter your name";
+const LENGTH_NAME = "Your name needs to be 30 or less letters";
+const LENGTH_TEXTAREA = "The comments area needs to be 500 or less letters";
+const EMAIL_REQUIRED = "Please enter your email";
+const EMAIL_INVALID = "Please enter a correct email address format";
+
 const works = [
   {
     title: 'Keeping track',
@@ -66,6 +76,23 @@ const works = [
     source: '#',
   },
 ];
+
+function validateEmail(input) {
+  var re = /^[a-z0-9]+([._%+-][a-z0-9]+)*@[a-z0-9]+([.-][a-z0-9]+)*\.[a-z]{2,}$/;
+  if (re.test(input) && input === input.toLowerCase()) {
+    form.submit();
+  } else {
+    alert("Email needs to be lowercase");
+  }
+}
+
+form.addEventListener("submit", function(event) {
+  event.preventDefault();
+  
+  let email = document.getElementById("email");
+
+  validateEmail(email.value);
+})
 
 function createWorkCard(Title, Image, Techs, index) {
   let techStacks = '';
