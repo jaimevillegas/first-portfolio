@@ -1,4 +1,1 @@
-- I can't access `ul` components of the Popup Window from css (lines 755 and 764)
-- I need to change the styling of the close button of Popup Window (line 691)
-- I need to equal the height of the projects section (line 288)
 - I need to show the Popup Window when I click on See Project button, not clicking anywhere on the project card.

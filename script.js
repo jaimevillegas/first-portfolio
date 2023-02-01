@@ -15,11 +15,10 @@ const image = document.getElementById('image');
 const liveVersion = document.getElementById('liveVersion');
 const source = document.getElementById('source');
 const worksContainer = document.getElementById('projects');
-const btnSeeProject = document.getElementById('btnSeeProject');
 
 const works = [
   {
-    title: 'Keeping track of hundreds of components',
+    title: 'Keeping track',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     image: './images/project-1.png',
     techs: ['html', 'Ruby', 'javascript'],
@@ -53,7 +52,7 @@ const works = [
   {
     title: 'Fresh Drinks',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    image: './images/project-5.png',
+    image: './images/project-2.png',
     techs: ['html', 'css', 'javascript'],
     liveVersion: '#',
     source: '#',
