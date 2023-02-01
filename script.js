@@ -5,7 +5,6 @@ const close = document.getElementById('close');
 const menuItem1 = document.getElementById('menuItem1');
 const menuItem2 = document.getElementById('menuItem2');
 const menuItem3 = document.getElementById('menuItem3');
-
 const closePopup = document.getElementById('closePopup');
 const popupArticle = document.getElementById('popupArticle');
 const popupContainer = document.getElementById('popupContainer');
@@ -15,16 +14,8 @@ const image = document.getElementById('image');
 const liveVersion = document.getElementById('liveVersion');
 const source = document.getElementById('source');
 const worksContainer = document.getElementById('projects');
-
-// FORM
+const error = document.getElementById('error');
 const form = document.forms[0];
-
-// Messages
-const NAME_REQUIRED = "Please enter your name";
-const LENGTH_NAME = "Your name needs to be 30 or less letters";
-const LENGTH_TEXTAREA = "The comments area needs to be 500 or less letters";
-const EMAIL_REQUIRED = "Please enter your email";
-const EMAIL_INVALID = "Please enter a correct email address format";
 
 const works = [
   {
@@ -78,21 +69,24 @@ const works = [
 ];
 
 function validateEmail(input) {
-  var re = /^[a-z0-9]+([._%+-][a-z0-9]+)*@[a-z0-9]+([.-][a-z0-9]+)*\.[a-z]{2,}$/;
+  const re = /^[a-z0-9]+([._%+-][a-z0-9]+)*@[a-z0-9]+([.-][a-z0-9]+)*\.[a-z]{2,}$/;
   if (re.test(input) && input === input.toLowerCase()) {
     form.submit();
   } else {
-    alert("Email needs to be lowercase");
+    error.style.display = 'block';
+    setTimeout(() => {
+      error.style.display = 'none';
+    }, [3000]);
   }
 }
 
-form.addEventListener("submit", function(event) {
+form.addEventListener('submit', (event) => {
   event.preventDefault();
-  
-  let email = document.getElementById("email");
+
+  const email = document.getElementById('email');
 
   validateEmail(email.value);
-})
+});
 
 function createWorkCard(Title, Image, Techs, index) {
   let techStacks = '';
