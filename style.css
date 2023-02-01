@@ -1,10 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
-:root {
-  --green-color: #36b37f;
-  --dark-blue-color: #172b4d;
-}
-
 ::-webkit-scrollbar {
   width: 12px;
 }
@@ -17,6 +12,11 @@
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background-color: silver;
+}
+
+:root {
+  --green-color: #36b37f;
+  --dark-blue-color: #172b4d;
 }
 
 * {
