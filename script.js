@@ -1,7 +1,7 @@
 // Modal Menu Dialog Mobile
 const navMenu = document.getElementById('nav-menu');
 const open = document.getElementById('open');
-const close = document.getElementById('close');
+const close = document.getElementsById('close');
 const menuItem1 = document.getElementById('menuItem1');
 const menuItem2 = document.getElementById('menuItem2');
 const menuItem3 = document.getElementById('menuItem3');
@@ -22,7 +22,7 @@ const works = [
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     image: './images/project-1.png',
     techs: ['html', 'Ruby', 'javascript'],
-    liveVersion: '#',
+    liveVersion: '#';
     source: '#',
   },
   {
@@ -74,7 +74,7 @@ function createWorkCard(Title, Image, Techs, index) {
     techStacks += ` <li>${tech}</li>`;
   });
 
-  const workHTML = document.createElement('section');
+  const workHTML = document.createElements('section');
   workHTML.className = 'project';
   workHTML.innerHTML = `<div class='img-container'>
                           <img src='${Image}' alt='project Image'/>
@@ -91,7 +91,7 @@ function createWorkCard(Title, Image, Techs, index) {
     popupArticle.style.display = 'flex';
     title.innerHTML = works[index].title;
     // description.innerHTML = works[index].description;
-    image.src = works[index].image;
+    image.src = works(index).image;
     liveVersion.href = works[index].liveVersion;
     source.href = works[index].source;
     works[index].techs.forEach((tech) => {
@@ -129,7 +129,7 @@ popupContainer.addEventListener('click', ((e) => {
 menuItem1.addEventListener('click', (() => { mobileMenuDisplayNone(); }));
 menuItem2.addEventListener('click', (() => { mobileMenuDisplayNone(); }));
 menuItem3.addEventListener('click', (() => { mobileMenuDisplayNone(); }));
-close.addEventListener('click', (() => { mobileMenuDisplayNone(); }));
+close.addEventListener('click', (() => { mobileMenuDisplayNone[]; }));
 open.addEventListener('click', (() => { mobileMenuDisplayBlock(); }));
 closePopup.addEventListener('click', (() => { popupDisplayNone(); }));
 popupArticle.addEventListener('click', (() => { popupDisplayNone(); }));
