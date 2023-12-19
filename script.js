@@ -5,7 +5,6 @@ const close = document.getElementById('close');
 const menuItem1 = document.getElementById('menuItem1');
 const menuItem2 = document.getElementById('menuItem2');
 const menuItem3 = document.getElementById('menuItem3');
-
 const closePopup = document.getElementById('closePopup');
 const popupArticle = document.getElementById('popupArticle');
 const popupContainer = document.getElementById('popupContainer');
@@ -15,6 +14,17 @@ const image = document.getElementById('image');
 const liveVersion = document.getElementById('liveVersion');
 const source = document.getElementById('source');
 const worksContainer = document.getElementById('projects');
+const error = document.getElementById('error');
+const form = document.forms[0];
+const Name = document.getElementById('name');
+const email = document.getElementById('email');
+const textarea = document.getElementById('comment');
+
+const formData = {
+  name: '',
+  email: '',
+  textarea: '',
+}
 
 const works = [
   {
@@ -66,6 +76,33 @@ const works = [
     source: '#',
   },
 ];
+
+function validateEmail(input) {
+  const re = /^[a-z0-9]+([._%+-][a-z0-9]+)*@[a-z0-9]+([.-][a-z0-9]+)*\.[a-z]{2,}$/;
+  if (re.test(input) && input === input.toLowerCase()) {
+    form.submit();
+  } else {
+    error.style.display = 'block';
+    setTimeout(() => {
+      error.style.display = 'none';
+    }, [3000]);
+  }
+}
+
+form.addEventListener('keyup', (()=> {
+  formData.name = Name.value;
+  formData.email = email.value;
+  formData.textarea = textarea.value;
+  localStorage.formData = JSON.stringify(formData);
+}));
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  const email = document.getElementById('email');
+
+  validateEmail(email.value);
+});
 
 function createWorkCard(Title, Image, Techs, index) {
   let techStacks = '';
@@ -122,6 +159,12 @@ window.addEventListener('load', (() => {
   works.forEach((work, index) => {
     createWorkCard(work.title, work.image, work.techs, index);
   });
+
+  const localData = JSON.parse(localStorage.formData);
+  Name.value = localData.name;
+  email.value = localData.email;
+  textarea.value = localData.textarea;
+
 }));
 popupContainer.addEventListener('click', ((e) => {
   e.stopPropagation();

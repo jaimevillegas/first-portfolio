@@ -558,6 +558,13 @@ input:focus {
   background-position: 315px 740px;
 }
 
+.error {
+  color: #ff6163;
+  font-size: 14px;
+  font-weight: bold;
+  display: none;
+}
+
 /* Popup Window */
 .popup-window-back {
   display: none;
